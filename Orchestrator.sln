@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orchestrator", "src\Orchestrator\Orchestrator.csproj", "{ADA17C76-D634-4BF9-842B-6F8A84283AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp", "demo\DemoApp\DemoApp.csproj", "{4B4F7EBB-C810-438B-8F0A-D0A3B7635FE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA17C76-D634-4BF9-842B-6F8A84283AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA17C76-D634-4BF9-842B-6F8A84283AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA17C76-D634-4BF9-842B-6F8A84283AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA17C76-D634-4BF9-842B-6F8A84283AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4F7EBB-C810-438B-8F0A-D0A3B7635FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4F7EBB-C810-438B-8F0A-D0A3B7635FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4F7EBB-C810-438B-8F0A-D0A3B7635FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4F7EBB-C810-438B-8F0A-D0A3B7635FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FADC17E-A0E1-411F-825C-1CF1A2A18218}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/mcp-network
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Orchestrator\\Orchestrator.csproj
+		SccProjectName1 = Orchestrator
+		SccLocalPath1 = Orchestrator
+		SccProjectUniqueName2 = DemoApp\\DemoApp.csproj
+		SccProjectName2 = DemoApp
+		SccLocalPath2 = DemoApp
+	EndGlobalSection
+EndGlobal
