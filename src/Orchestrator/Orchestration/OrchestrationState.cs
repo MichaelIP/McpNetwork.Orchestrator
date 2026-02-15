@@ -1,5 +1,12 @@
 ﻿namespace McpNetwork.Orchestrator.Orchestration;
 
+/// <summary>
+/// Represents a strongly-typed, in-memory key-value store for managing orchestration state entries.
+/// </summary>
+/// <remarks>Use this class to store, retrieve, and update state values associated with unique string keys during
+/// the execution of an orchestration. Each entry is type-safe and can be individually set, updated, or removed.
+/// Attempting to store delegates as state values is not supported and will result in an exception. This class is not
+/// thread-safe; concurrent access should be synchronized externally if used in multi-threaded scenarios.</remarks>
 public sealed class OrchestrationState
 {
     private readonly Dictionary<string, object> _state = new();

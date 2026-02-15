@@ -1,10 +1,9 @@
-﻿namespace McpNetwork.Orchestrator.Models.Enums
+﻿namespace McpNetwork.Orchestrator.Models.Enums;
+
+public enum EFeatureStatus
 {
-    public enum EFeatureStatus
-    {
-        Success,
-        Busy,
-        Rejected,
-        Failed,
-    }
+    Success,
+    Busy,
+    Rejected,
+    Failed,
 }

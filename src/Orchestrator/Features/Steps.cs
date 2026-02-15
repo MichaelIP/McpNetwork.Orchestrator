@@ -4,6 +4,15 @@ using McpNetwork.Orchestrator.Orchestration;
 
 namespace McpNetwork.Orchestrator.Features;
 
+/// <summary>
+/// Provides factory methods for creating orchestration steps that execute features with various input and output
+/// handling strategies.
+/// </summary>
+/// <remarks>The Steps class offers static methods to construct orchestration steps that integrate features into
+/// an orchestration pipeline. These methods allow callers to specify how feature inputs are supplied—either from the
+/// orchestration state, as a fixed value, or with no input—and optionally define how feature outputs are stored back
+/// into the orchestration state. All methods return an IOrchestrationStep instance suitable for use in orchestrated
+/// workflows.</remarks>
 public static class Steps
 {
     /// <summary>
