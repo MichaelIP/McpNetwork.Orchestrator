@@ -57,11 +57,11 @@ public sealed class OrchestrationState
     }
 
     /// <summary>
-    /// 
+    /// Replaces the value associated with the specified key with a new value. Throws an exception if the key does not exist.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <param name="key"></param>
-    /// <param name="value"></param>
+    /// <param name="key">The key of the state entry to update. Cannot be null.</param>
+    /// <param name="value">The value to associate with the specified key.</param>
     public void Replace<T>(string key, T value)
     {
         GuardAgainstDelegate(key, value);
@@ -91,23 +91,10 @@ public sealed class OrchestrationState
         return typed;
     }
 
-    //// 5️⃣ Optional
-    //public bool TryGet<T>(string key, out T value)
-    //{
-    //    if (_state.TryGetValue(key, out var raw) && raw is T typed)
-    //    {
-    //        value = typed;
-    //        return true;
-    //    }
-
-    //    value = default!;
-    //    return false;
-    //}
-
     /// <summary>
-    /// 
+    /// Removes the state entry associated with the specified key. Does nothing if the key does not exist.
     /// </summary>
-    /// <param name="key"></param>
+    /// <param name="key">The key whose associated value is to be retrieved. Cannot be null.</param>
     public void Remove(string key) => _state.Remove(key);
 
     private static void GuardAgainstDelegate(string key, object? value)
