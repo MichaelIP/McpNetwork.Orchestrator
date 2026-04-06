@@ -1,0 +1,14 @@
+name: Publish to NuGet
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    uses: MichaelIP/github-workflows/.github/workflows/nuget-publish.yml@main
+    with:
+      project-path: ./src/McpNetwork.Orchestrator/McpNetwork.Orchestrator.csproj
+    secrets:
+      NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
